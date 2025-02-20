@@ -4,6 +4,8 @@ body {
     padding: 0;
     background: #f8f9fa;
     color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
@@ -11,6 +13,9 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    font: bold;
+
+
 }
 
 #section-home {
@@ -20,11 +25,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+ 
 
 }
 
 div h2 {
     text-align: center;
+
 }
 
 .nav-list {
@@ -33,13 +40,20 @@ div h2 {
     display: flex;
     justify-content: center;
     gap: 15px;
+    
 }
 
 .nav-list li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    
+  
 }
+ .nav ul {
+        display: block;
+        max-width: 768px
+    }
 
 .gallery-container {
     display: flex;
@@ -51,12 +65,12 @@ div h2 {
 
 .gallery-item {
     background: white;
-    padding: 10px;
+    padding: 10;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 250px;
-    height: 250px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,11 +81,21 @@ div h2 {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-column: 1 / span 2;
+    
 }
 
 
 .product-container {
-
+        
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+        
 }
 
 .product {
@@ -82,13 +106,21 @@ div h2 {
   padding: 15px;
   border-radius: 8px;
   flex: 1 1 400px;
+  display: grid;
+  column-gap: 50px;
+  display: flex;
+  
+ 
+
 }
 .product img {
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 8px;
-    aspect-ratio: 1 / 1
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+    
 }
 
 
